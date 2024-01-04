@@ -1,0 +1,57 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+
+function Pos03() {
+  const [Pos03, setPos03] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:8081/Posary') 
+      .then(res => {
+        console.log(res);
+        setPos03(res.data);
+      })
+      .catch(err => console.log(err));
+  }, []);
+
+  return (
+    <div className='d-flex vh-100 bg-info justify-content-center align-items-center'>
+      <div className='w-80 bg-white rounded'>
+      <div>
+            <h1 style={{textAlign:'center', color:'purple'}}>PosARY DETAILS</h1>
+        </div>
+        <a href="/" className='btn btn-danger'>Back</a>
+        <Link to="/create3" className='btn btn-success'>Add +</Link>
+        <table className='table'>
+          <thead>
+            <tr>
+              <th>NTSPos_ID</th>
+              <th>Pos_ID</th>
+              <th>Pos_Amnt</th>
+              <th>Pos_CreditDate</th>
+              <th>NTS_ID</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Pos03.map((data) => (
+              <tr key={data.NTSPos_ID}> {/* Use the correct key */}
+                <td>{data.NTSPos_ID}</td>
+                <td>{data.Pos_ID}</td>
+                <td>{data.Pos_Amnt}</td>
+                <td>{data.Pos_CreditDate}</td>
+                <td>{data.NTS_ID}</td>
+                <td>
+                <Link to={`/UpdatePos/${data.NTS_ID}`} className='btn btn-info'>Update</Link>
+                <button className='btn btn-danger'>Delete</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+export default Pos03;

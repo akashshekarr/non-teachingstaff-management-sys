@@ -1,0 +1,116 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #d980ff;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+    text-align: center;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .bg-image {
+    background-image: url("clg.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* Ensure the background covers the entire viewport height */
+    width: 400%;
+  }
+
+  .bg-image1 {
+    background-image: url("nts1.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+
+  .table1 {
+    opacity: 150%;
+    background-color: rbga(0,30,0,1);
+  }
+
+  .bg-image2 {
+    background-image: url("images\ \(10\).jpeg.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .table2 {
+    opacity: 200%;
+    color:black;
+  }
+
+  .bg-image3 {
+    background-image: url("images\ \(11\).jpeg.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+  }
+
+  .table3 {
+    text-align: center;
+    opacity: 200%;
+    color:rgb(0, 0, 0);
+    width: 800px ;
+  }
+
+  .bg-image4 {
+    background-image: url("sa1.jpeg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+  }
+
+  .table4 {
+    text-align: center;
+    opacity: 200%;
+    color:rgb(255, 252, 252);
+  }
+
+  .bg-image5 {
+    background-image: url("lea1.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+  }
+
+  .table5 {
+    text-align: center;
+    opacity: 500%;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+  }

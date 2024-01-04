@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f676ff;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+    text-align: center;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .bg-image {
+    background-image: url(clg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; 
+  }
+  
+  .bg-imageF {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: center;
+    min-height: 100vh; 
+  }
+  
+  
